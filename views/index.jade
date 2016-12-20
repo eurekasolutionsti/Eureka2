@@ -1,0 +1,228 @@
+extends layout
+
+block content
+  div#dMenu
+    img#imgLogoMenu.fade(src="/images/logo.png")
+    div#dMenuSub
+      div.dMenuSelect(onclick="allerSection('sMain')" onmouseover="mOver(this)" onmouseout="mOut(this)")
+        span.fade Accueil
+        span.sNormal &#x25C7;
+      div.dMenuSelect(onclick="allerSection('sResume')" onmouseover="mOver(this)" onmouseout="mOut(this)")
+        span.fade R&eacute;sum&eacute;
+        span.sNormal &#x25C7;
+      div.dMenuSelect(onclick="allerSection('sServices')" onmouseover="mOver(this)" onmouseout="mOut(this)")
+        span.fade Services offerts
+        span.sNormal &#x25C7;
+      div.dMenuSelect(onclick="allerSection('sTarifs')" onmouseover="mOver(this)" onmouseout="mOut(this)")
+        span.fade Forfaits et frais &agrave; la carte
+        span.sNormal &#x25C7;
+      div.dMenuSelect(onclick="allerSection('sAPropos')" onmouseover="mOver(this)" onmouseout="mOut(this)")
+        span.fade &Agrave; propos
+        span.sNormal &#x25C7;
+      div.dMenuSelect(onclick="allerSection('sContact')" onmouseover="mOver(this)" onmouseout="mOut(this)")
+        span.fade Contactez-nous
+        span.sNormal &#x25C7;
+      div.dMenuSelect(onclick="allerSection('sPolitiques')" onmouseover="mOver(this)" onmouseout="mOut(this)")
+        span.fade Politiques et termes de paiement
+        span.sNormal &#x25C7;
+  section#sMain(class="sectionClass")
+    div#divlogo
+      img#iLogo(src="/images/logo.png")
+    //img#iFond(src="/images/takxap853ry-alejandro-escamilla.jpg")
+  section#sResume(class="sectionClass")
+    div(class="divDesc")
+      h2(class="h2D") R&eacute;sum&eacute;
+      span Notre entreprise d&eacute;sire apporter des solutions simples et efficaces au moyen de formation aux
+        |employ&eacute;s d&eacute;sireux d'am&eacute;liorer leurs connaissances au niveau de leurs outils de travail,
+        |notamment la Suite Office.
+      h2(class="h2N") Client&egrave;le vis&eacute;e
+      span Nos services s'adressent aux petites entreprises de parcs industriels, aux boutiques d'avocats
+        |et autres petits bureaux d'avocats ou de notaires.
+  section#sServices(class="sectionClass")
+    div(class="divFiltre")
+      div(class="divDesc")
+        h2(class="h2D") Services offerts
+        ul
+          li Formation sur &laquo; mesure &raquo; en vue de la r&eacute;solution de probl&eacute;matique pr&eacute;cise
+          li Formation de groupe ou individuelle
+          li Formation sur l'utilisation efficace des outils de travail
+          li Formation sur les nouvelles technologies : nuages (Exemples : Dropbox, OneDrive, etc), r&eacute;seaux sociaux, t&eacute;l&eacute;phones intelligents, tablettes, etc.
+          li Mise en forme de formulaires pour faciliter les t&acirc;ches quotidiennes
+          li Service de support bureautique et montage de documents types
+  section#sTarifs(class="sectionClass")
+    div#divTarif
+      div#forfaitsEntete.divEntete
+        h2.h2TarifClick Forfaits
+      div#forfaits
+        div(class="divPlans")
+          table.tableTarif
+            tr.trTarif
+              td.tdTarifH
+                span
+                  h3 Plan 1
+            tr.trTarif
+              td.tdTarif
+                span 1 heure de formation sur place
+                br
+                span &
+                br
+                span 1 heure de support t&eacute;l&eacute;phonique
+                br
+                span &
+                br
+                span 1 heure de mise en forme de documents mod&egrave;les ou de montage de documents types
+            tr.trTarif
+              td.tdTarifP
+                span
+                  span.spanP $ 160,00
+        div(class="divPlans")
+          table.tableTarif
+            tr.trTarif
+              td.tdTarifH
+                span
+                  h3 Plan 2
+            tr.trTarif
+              td.tdTarif
+                span 3 heures de formation
+                br
+                span &
+                br
+                span Support post-formation de 15 minutes
+            tr.trTarif
+              td.tdTarifP
+                span
+                  span.spanP $ 200,00
+        div(class="divPlans")
+          table.tableTarif
+            tr.trTarif
+              td.tdTarifH
+                span
+                  h3 Plan 3
+            tr.trTarif
+              td.tdTarif
+                span 3 heures de support t&eacute;l&eacute;phonique
+                br
+                span &
+                br
+                span 1 heure de mise en forme de documents mod&egrave;les ou de montage de documents types
+            tr.trTarif
+              td.tdTarifP
+                span
+                  span.spanP $ 250,00
+        div(class="divPlans")
+          table.tableTarif
+            tr.trTarif
+              td.tdTarifH
+                span
+                  h3 Plan 4
+            tr.trTarif
+              td.tdTarif
+                span 2 heures de formation sur place
+                br
+                span &
+                br
+                span 3 heures de support t&eacute;l&eacute;phonique
+            tr.trTarif
+              td.tdTarifP
+                span
+                  span.spanP $ 350,00
+      div#fraisEntete.divEntete
+        h2.h2TarifClick Frais &agrave; la carte
+        button.bPlus(onclick="affichePlan(this, 'frais')") +
+      div#frais.divHide
+        div(class="divPlans")
+          table.tableTarif
+            tr.trTarif
+              td.tdTarifH
+                span
+                  h3 &Agrave; la carte 1
+            tr.trTarif
+              td.tdTarif
+                span Formation
+                br
+                span Maximum de 6 participants - Charge additionnelle par utilisateur exc&eacute;dentaire
+            tr.trTarif
+              td.tdTarifP
+                  span.spanP $ 80,00
+                  span.spanHS de l'heure
+        div(class="divPlans")
+          table.tableTarif
+            tr.trTarif
+              td.tdTarifH
+                span
+                  h3 &Agrave; la carte 2
+            tr.trTarif
+              td.tdTarif
+            tr.trTarif
+              td.tdTarifP
+                span
+        div(class="divPlans")
+          table.tableTarif
+            tr.trTarif
+              td.tdTarifH
+                span
+                  h3 &Agrave; la carte 3
+            tr.trTarif
+              td.tdTarif
+            tr.trTarif
+              td.tdTarifP
+                span
+        div(class="divPlans")
+          table.tableTarif
+            tr.trTarif
+              td.tdTarifH
+                span
+                  h3 &Agrave; la carte 4
+            tr.trTarif
+              td.tdTarif
+            tr.trTarif
+              td.tdTarifP
+                span
+        div(class="divPlans")
+          table.tableTarif
+            tr.trTarif
+              td.tdTarifH
+                span
+                  h3 &Agrave; la carte 5
+            tr.trTarif
+              td.tdTarif
+            tr.trTarif
+              td.tdTarifP
+                span
+        div(class="divPlans")
+          table.tableTarif
+            tr.trTarif
+              td.tdTarifH
+                span
+                  h3 &Agrave; la carte 6
+            tr.trTarif
+              td.tdTarif
+            tr.trTarif
+              td.tdTarifP
+                span
+        div(class="divPlans")
+          table.tableTarif
+            tr.trTarif
+              td.tdTarifH
+                span
+                  h3 &Agrave; la carte 7
+            tr.trTarif
+              td.tdTarif
+            tr.trTarif
+              td.tdTarifP
+                span
+  section#sAPropos(class="sectionClass")
+  section#sContact(class="sectionClass")
+  section#sPolitiques(class="sectionClass")
+    div#divFoot
+      h2 Politiques et termes de paiement
+      div(class="divFootSub")
+        h3 Politique de confidentialit&eacute;
+        span Eur&ecirc;ka Solutions TI reconna&icirc;t le caract&egrave;re confidentiel de toute l'information contenue dans les documents et s'engage &agrave; conserver la nature confidentielle des informations et &agrave; ne pas en divulguer ou partager le contenu.
+        h3 Politique d'insatisfaction
+        span Dans le cas d'insatisfaction concernant la mise en page des documents, Eur&ecirc;ka Solutions TI s'engage &agrave; effectuer les modifications moyennant des frais suppl&eacute;mentaires.
+      div(class="divFootSub")
+        h3 Responsabilit&eacute;
+        span Eur&ecirc;ka Solutions TI d&eacute;cline toute responsabilit&eacute; quant aux modifications &eacute;ventuelles, fautives ou non, que le client apporterait au texte apr&egrave;s sa remise.
+        h3 D&eacute;lai de paiement
+        span Terme net de 30 jours ou 2 % de frais d'int&eacute;r&ecirc;t par mois (24 % par an) pour tous les comptes en souffrance. Le paiement peut &ecirc;tre effectu&eacute; par ch&egrave;que au nom d'Eur&ecirc;ka Solutions TI.

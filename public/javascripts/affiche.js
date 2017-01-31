@@ -30,7 +30,7 @@ function allerSection(id) {
     ////var top = $("#"+id).scrollTop();
     //console.log(top);
     $('html, body').animate({
-        scrollTop:$("#"+id).offset().top
+        scrollTop:$("#"+id).offset().top -200
     },1000);
 
 }

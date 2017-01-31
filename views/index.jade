@@ -2,29 +2,33 @@ extends layout
 
 block content
   div#dMenu
-    img#imgLogoMenu.fade(src="/images/logo.png")
+    //div#dMenuUnder
     div#dMenuSub
+      img#imgLogoMenu.fade(src="/images/logo.png")
       div.dMenuSelect(onclick="allerSection('sMain')" onmouseover="mOver(this)" onmouseout="mOut(this)")
         span.fade Accueil
-        span.sNormal &#x25C7;
+        span#spanAccueil.sNormal &#x25C7;
       div.dMenuSelect(onclick="allerSection('sResume')" onmouseover="mOver(this)" onmouseout="mOut(this)")
         span.fade R&eacute;sum&eacute;
-        span.sNormal &#x25C7;
+        span#spanResume.sNormal &#x25C7;
       div.dMenuSelect(onclick="allerSection('sServices')" onmouseover="mOver(this)" onmouseout="mOut(this)")
         span.fade Services offerts
-        span.sNormal &#x25C7;
+        span#spanServices.sNormal &#x25C7;
       div.dMenuSelect(onclick="allerSection('sTarifs')" onmouseover="mOver(this)" onmouseout="mOut(this)")
-        span.fade Forfaits et frais &agrave; la carte
-        span.sNormal &#x25C7;
+        span.fade Forfaits et &agrave; la carte
+        span#spanTarifs.sNormal &#x25C7;
+      div.dMenuSelect(onclick="allerSection('sTrucs')" onmouseover="mOver(this)" onmouseout="mOut(this)")
+        span.fade Chroniques OWEP
+        span#spanTrucs.sNormal &#x25C7;
       div.dMenuSelect(onclick="allerSection('sAPropos')" onmouseover="mOver(this)" onmouseout="mOut(this)")
         span.fade &Agrave; propos
-        span.sNormal &#x25C7;
+        span#spanAPropos.sNormal &#x25C7;
       div.dMenuSelect(onclick="allerSection('sContact')" onmouseover="mOver(this)" onmouseout="mOut(this)")
         span.fade Contactez-nous
-        span.sNormal &#x25C7;
+        span#spanContact.sNormal &#x25C7;
       div.dMenuSelect(onclick="allerSection('sPolitiques')" onmouseover="mOver(this)" onmouseout="mOut(this)")
-        span.fade Politiques et termes de paiement
-        span.sNormal &#x25C7;
+        span.fade Politiques
+        span#spanPolitiques.sNormal &#x25C7;
   section#sMain(class="sectionClass")
     div#divlogo
       img#iLogo(src="/images/logo.png")
@@ -211,6 +215,7 @@ block content
             tr.trTarif
               td.tdTarifP
                 span
+  section#sTrucs(class="sectionClass")
   section#sAPropos(class="sectionClass")
   section#sContact(class="sectionClass")
   section#sPolitiques(class="sectionClass")

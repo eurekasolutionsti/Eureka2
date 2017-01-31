@@ -107,7 +107,7 @@ h1,h2{
 }
 
 #divTarif{
-  width: 1000px;
+  width: 60%;
   margin: 10px auto;
   text-align: center;
 }
@@ -212,23 +212,24 @@ button:focus {outline:0;}
   position: fixed;
   text-align: right;
   right: 0;
-  bottom: 42%;
-  width: 270px;
-  padding-right: 70px;
-  z-index: 2;
+  top: 0;
+  width: 250px;
+  height: 100%;
 }
 
 #dMenuUnder{
-  display: none;
   position: fixed;
   right: 0;
-  width: 280px;
+  width: 0;
   height: 100%;
-  z-index: 1;
+  z-index: -1;
   background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75));
 }
 
 #dMenuSub{
+  position: fixed;
+  right: 50px;
+  top: 33%;
   color: #d49a00;
   font: bold 16px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
@@ -246,11 +247,11 @@ button:focus {outline:0;}
 }
 
 .fade{
-  z-index: 1;
   opacity: 0;
-  transition: opacity .5s ease-in-out, right .5s ease-in-out;
-  -moz-transition: opacity .5s ease-in-out, right .5s ease-in-out;
-  -webkit-transition: opacity .5s ease-in-out, right .5s ease-in-out;
+  width: 0;
+  transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
 }
 
 #dMenu:hover .fade{
@@ -258,5 +259,5 @@ button:focus {outline:0;}
 }
 
 #dMenu:hover #dMenuUnder{
-  display: block;
+  width: 350px;
 }

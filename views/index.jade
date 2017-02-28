@@ -1,6 +1,7 @@
 extends layout
 
 block content
+  include OWEP
   div#dMenu
     //div#dMenuUnder
     div#dMenuSub
@@ -144,7 +145,9 @@ block content
               td.tdTarif
                 span Formation
                 br
-                span Maximum de 6 participants - Charge additionnelle par utilisateur exc&eacute;dentaire
+                span Maximum de 6 participants
+                br
+                span - Charge additionnelle par utilisateur exc&eacute;dentaire
             tr.trTarif
               td.tdTarifP
                   span.spanP $ 80,00
@@ -157,9 +160,14 @@ block content
                   h3 &Agrave; la carte 2
             tr.trTarif
               td.tdTarif
+                span Mise en page de documents
+                ul(style="text-align: left;")
+                  li Mise en forme de formulaires pour faciliter les t&acirc;ches quotidiennes
+                  li Montage de documents types
             tr.trTarif
               td.tdTarifP
-                span
+                span.spanP $ 50,00
+                span.spanHS de l'heure
         div(class="divPlans")
           table.tableTarif
             tr.trTarif
@@ -168,9 +176,13 @@ block content
                   h3 &Agrave; la carte 3
             tr.trTarif
               td.tdTarif
+                span Service de support bureautique
+                br
+                span - Charge minimale de 15 minutes par appel
             tr.trTarif
               td.tdTarifP
-                span
+                span.spanP $ 20,00
+                span.spanHS chaque 15 minutes
         div(class="divPlans")
           table.tableTarif
             tr.trTarif
@@ -179,9 +191,11 @@ block content
                   h3 &Agrave; la carte 4
             tr.trTarif
               td.tdTarif
+                span Consultation et gestion de projet
             tr.trTarif
               td.tdTarifP
-                span
+                span.spanP $ 100,00
+                span.spanHS de l'heure
         div(class="divPlans")
           table.tableTarif
             tr.trTarif
@@ -190,9 +204,13 @@ block content
                   h3 &Agrave; la carte 5
             tr.trTarif
               td.tdTarif
+                span D&eacute;veloppement de capsules
+                br
+                span e-learning
             tr.trTarif
               td.tdTarifP
-                span
+                span.spanP $ 80,00
+                span.spanHS de l'heure
         div(class="divPlans")
           table.tableTarif
             tr.trTarif
@@ -201,9 +219,11 @@ block content
                   h3 &Agrave; la carte 6
             tr.trTarif
               td.tdTarif
+                span D&eacute;veloppement de petites applications
             tr.trTarif
               td.tdTarifP
-                span
+                span.spanP $ 80,00
+                span.spanHS de l'heure
         div(class="divPlans")
           table.tableTarif
             tr.trTarif
@@ -212,10 +232,15 @@ block content
                   h3 &Agrave; la carte 7
             tr.trTarif
               td.tdTarif
+                span R&eacute;alisation de pages web
             tr.trTarif
               td.tdTarifP
-                span
+                span.spanP $ 50,00
+                span.spanHS de l'heure
   section#sTrucs(class="sectionClass")
+    div(class="divDesc")
+      h2.h2TarifClick Chroniques OWEP
+      button.bPlus(onclick="afficheOWEP()") +
   section#sAPropos(class="sectionClass")
   section#sContact(class="sectionClass")
   section#sPolitiques(class="sectionClass")

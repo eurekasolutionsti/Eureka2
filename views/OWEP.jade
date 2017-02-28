@@ -1,0 +1,86 @@
+div#dOWEP
+   div#dOWEPSub
+      div(style="margin: 5px 0 5px 5px;")
+         h2 Chroniques OWEP
+         span Les options d&eacute;crites ci-apr&egrave;s et les captures d'&eacute;cran ont &eacute;t&eacute; r&eacute;alis&eacute;es dans un environnement Windows 10 et Office 2016. Ces options peuvent diff&eacute;rer selon l'environnement.
+
+      div.dOWEPSec
+         div.dOWEPSecEntete
+            h2 Outlook
+         div#dOWEPOuotlook.dOWEPSecCorps
+            div.dOWEPSecEntete
+               span(style="font-weight: bold;") Chronique 1
+            div.dOWEPSecCorps
+               div.dChroniques
+                  span Transformer rapidement un courriel re&ccedil;u en Rendez-vous ou T&acirc;che en le glissant vers l'ic&ocirc;ne appropri&eacute;e.
+                  |En glissant le courriel vers l'ic&ocirc;ne Contacts, le contenu du courriel s'inscrit dans l'espace Notes.
+
+            div.dOWEPSecEntete
+               span(style="font-weight: bold;") Chronique 2
+            div.dOWEPSecCorps
+               div.dChroniques
+                  span Le nombre d'&eacute;l&eacute;ments dans un dossier; l'information sur les quotas (espace libre dans la boite), le nombre d'&eacute;l&eacute;ments non lus, etc.
+                  br
+                  img(src="/images/ChroO1.png" style="padding-top: 5px;")
+
+      div.dOWEPSec
+         h2 Word
+
+         div.dChroniques
+            span Utiliser un saut de section page suivante pour :
+            ul
+               li Modifier l'orientation du document &agrave; partir de l'insertion du saut de section
+               li Ajouter ou enlever de l'information dans l'ent&ecirc;te ou le pied-de-page (logo, num&eacute;ro de page, titre du chapitre, ...)
+
+         div.dChroniques
+            span Le nombre de mots dans le document, le nombre de mots s&eacute;lectionn&eacute;s, le nombre de pages, le nombre de page par section, la langue, la v&eacute;rification linguistique, le mode Refrappe, etc.
+            br
+            img(src="/images/ChroW1.jpg" style="padding-top: 5px;")
+
+      div.dOWEPSec
+         h2 Excel
+
+         div.dChroniques
+            span Utiliser la fonction F4 pour d&eacute;finir rapidement la r&eacute;f&eacute;rence (absolue ou relative) &agrave; une cellule.
+            |Presser la touche F4 une fois pour ajouter le symbole dollar devant la r&eacute;f&eacute;rence de ligne et de colonne;
+            |une seconde fois pour placer le symbole uniquement devant la ligne, une troisi&egrave;me fois pour placer le symbole
+            |uniquement devant la colonne et une quatri&egrave;me fois pour une r&eacute;f&eacute;rence normale, sans aucun symbole.
+
+         div.dChroniques
+            span Pour la plage s&eacute;lectionn&eacute;e : la somme, la moyenne, le nombre de cellules vides.
+            br
+            img(src="/images/ChroE1.jpg" style="padding-top: 5px;")
+
+      div.dOWEPSec
+         h2 PowerPoint
+
+         div.dChroniques
+            span Utiliser le Masque des diapositives (sous l'onglet Affichage) pour modifier l'ensemble ou une des
+            |dispositions de la pr&eacute;sentation. La modification effectu&eacute;e dans le masque s'appliquera &agrave; l'ensemble de la pr&eacute;sentation.
+            |Ajouter un logo dans le masque et ce dernier appara&icirc;tra sur toutes les diapositives de la pr&eacute;sentation.
+            |Ne pas oublier de D&eacute;sactiver le masque avant de poursuivre la cr&eacute;ation de la pr&eacute;sentation.
+
+         div.dChroniques
+            span La langue, la v&eacute;rification linguistique, les boutons pour l'ajout rapide de Notes et Commentaires, le th&egrave;me utilis&eacute;, le num&eacute;ro de la diapositive.
+            br
+            img(src="/images/ChroPP1.jpg" style="padding-top: 5px;")
+
+   div#dOnglets
+      div
+         input(type="text" name="recherche" placeholder="Recherche" style="margin: 5px;")
+         h3 Filtres
+      div.dOngletsSub
+         div
+            h3 Application
+            input(type="checkbox" name="App" value="Outlook")
+            span Outlook
+            br
+            input(type="checkbox" name="App" value="Word")
+            span Word
+            br
+            input(type="checkbox" name="App" value="Excel")
+            span Excel
+            br
+            input(type="checkbox" name="App" value="PowerPoint")
+            span PowerPoint
+div#dFond(onclick="cacheOWEP()")

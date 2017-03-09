@@ -1,3 +1,11 @@
+//div.dChroniques
+      div.dOWEPSecEntete
+         span(style="font-weight: bold;")
+         div.dOWEPSecEntetePlus +
+      div.dOWEPSecCorps
+         div.dChroniquesCorps
+            span
+
 div#dOWEP
    div#dOWEPSub
       div(style="margin: 5px 0 5px 5px;")
@@ -7,63 +15,123 @@ div#dOWEP
       div.dOWEPSec
          div.dOWEPSecEntete
             h2 Outlook
-         div#dOWEPOuotlook.dOWEPSecCorps
+            div.dOWEPSecEntetePlus +
+         div#dOWEPOutlook.dOWEPSecCorps
             div.dOWEPSecEntete
-               span(style="font-weight: bold;") Chronique 1
+               span.sSousSujet Bo&icirc;te de r&eacute;ception
+               div.dOWEPSecEntetePlus +
             div.dOWEPSecCorps
                div.dChroniques
-                  span Transformer rapidement un courriel re&ccedil;u en Rendez-vous ou T&acirc;che en le glissant vers l'ic&ocirc;ne appropri&eacute;e.
-                  |En glissant le courriel vers l'ic&ocirc;ne Contacts, le contenu du courriel s'inscrit dans l'espace Notes.
-
+                  div.dOWEPSecEntete
+                     span.sTitre Trouver le nombre d'&eacute;l&eacute;ments dans un dossier de la Bo&icirc;te de r&eacute;ception
+                     div.dOWEPSecEntetePlus +
+                  div.dOWEPSecCorps
+                     div.dChroniquesCorps
+                        span S&eacute;lectionner le dossier... le nombre d'&eacute;l&eacute;ments dans un dossier s'affiche dans la&nbsp;
+                        label.labelLienGlossaire(data-tooltip="La barre d'&eacute;tat est la barre situ&eacute;e au bas de l'&eacute;cran juste au dessus de la barre des t&acirc;ches de Windows. Par d&eacute;faut, uniquement quelques informations se trouvent sur la barre d'&eacute;tat au moment de l'installation standard, autre que le Zoom et le Curseur de Zoom. Pour ajouter ou enlever des &eacute;l&eacute;ments de la barre d'&eacute;tat, cliquer-droit sur la barre d'&eacute;tat pour afficher les &eacute;l&eacute;ments disponibles.") barre d'&eacute;tat
+                        span ; de plus, on y retrouve les informations suivantes : les quotas (espace libre dans la boite), le nombre d'&eacute;l&eacute;ments non lus, le curseur de zoom, le zoom, le nombre de rappels, etc.
+                        |Pour afficher plus d'informations, cliquer droit sur la barre d'&eacute;tat et s&eacute;lectionner les informations &agrave; afficher.
             div.dOWEPSecEntete
-               span(style="font-weight: bold;") Chronique 2
+               span.sSousSujet Rendez-vous
+               div.dOWEPSecEntetePlus +
             div.dOWEPSecCorps
+
                div.dChroniques
-                  span Le nombre d'&eacute;l&eacute;ments dans un dossier; l'information sur les quotas (espace libre dans la boite), le nombre d'&eacute;l&eacute;ments non lus, etc.
-                  br
-                  img(src="/images/ChroO1.png" style="padding-top: 5px;")
+                  div.dOWEPSecEntete
+                     span.sTitre Transformer un courriel re&ccedil;u en rendez-vous
+                     div.dOWEPSecEntetePlus +
+                  div.dOWEPSecCorps
+                     div.dChroniquesCorps
+                        span Glisser le courriel vers l'ic&ocirc;ne du calendrier. La fen&ecirc;tre Nouveau rendez-vous appara&icirc;t et le texte du courriel appara&icirc;t
+                        |dans la section r&eacute;serv&eacute;e &agrave; l'entr&eacute;e manuelle d'informations. Le courriel dispara&icirc;t de la bo&icirc;te de r&eacute;ception.
+                        hr
+                        |&Agrave; l'aide de l'option D&eacute;placer
+                        |Cliquer droit sur le courriel et s&eacute;lectionner D&eacute;placer puis Calendrier. La fen&ecirc;tre Nouveau rendez-vous appara&icirc;t
+                        |et le courriel appara&icirc;t en fichier joint au rendez-vous et dispara&icirc;t de la b&icirc;ote de r&eacute;ception.
+
+               div.dChroniques
+                  div.dOWEPSecEntete
+                     span.sTitre Transformer un rendez-vous en r&eacute;union
+                     div.dOWEPSecEntetePlus +
+                  div.dOWEPSecCorps
+                     div.dChroniquesCorps
+                        span Transformer un rendez-vous en R&eacute;union en invitant des participants &agrave; l'aide de l'Assistant planification.
 
       div.dOWEPSec
-         h2 Word
-
-         div.dChroniques
-            span Utiliser un saut de section page suivante pour :
-            ul
-               li Modifier l'orientation du document &agrave; partir de l'insertion du saut de section
-               li Ajouter ou enlever de l'information dans l'ent&ecirc;te ou le pied-de-page (logo, num&eacute;ro de page, titre du chapitre, ...)
-
-         div.dChroniques
-            span Le nombre de mots dans le document, le nombre de mots s&eacute;lectionn&eacute;s, le nombre de pages, le nombre de page par section, la langue, la v&eacute;rification linguistique, le mode Refrappe, etc.
-            br
-            img(src="/images/ChroW1.jpg" style="padding-top: 5px;")
-
-      div.dOWEPSec
-         h2 Excel
-
-         div.dChroniques
-            span Utiliser la fonction F4 pour d&eacute;finir rapidement la r&eacute;f&eacute;rence (absolue ou relative) &agrave; une cellule.
-            |Presser la touche F4 une fois pour ajouter le symbole dollar devant la r&eacute;f&eacute;rence de ligne et de colonne;
-            |une seconde fois pour placer le symbole uniquement devant la ligne, une troisi&egrave;me fois pour placer le symbole
-            |uniquement devant la colonne et une quatri&egrave;me fois pour une r&eacute;f&eacute;rence normale, sans aucun symbole.
-
-         div.dChroniques
-            span Pour la plage s&eacute;lectionn&eacute;e : la somme, la moyenne, le nombre de cellules vides.
-            br
-            img(src="/images/ChroE1.jpg" style="padding-top: 5px;")
+         div.dOWEPSecEntete
+            h2 Word
+            div.dOWEPSecEntetePlus +
+         div#dOWEPWord.dOWEPSecCorps
+            div.dChroniques
+               div.dOWEPSecEntete
+                  span(style="font-weight: bold;") Chronique 3
+                  div.dOWEPSecEntetePlus +
+               div.dOWEPSecCorps
+                  div.dChroniquesCorps
+                     span Utiliser un saut de section page suivante pour :
+                     ul
+                        li Modifier l'orientation du document &agrave; partir de l'insertion du saut de section
+                        li Ajouter ou enlever de l'information dans l'ent&ecirc;te ou le pied-de-page (logo, num&eacute;ro de page, titre du chapitre, ...)
+            div.dChroniques
+               div.dOWEPSecEntete
+                  span(style="font-weight: bold;") Options disponibles de la barre d'&eacute;tat - Word
+                  div.dOWEPSecEntetePlus +
+               div.dOWEPSecCorps
+                  div.dChroniquesCorps
+                     span Le nombre de mots dans le document, le nombre de mots s&eacute;lectionn&eacute;s, le nombre de pages, le nombre de page par section, la langue, la v&eacute;rification linguistique, le mode Refrappe, etc.
+                     br
+                     img(src="/images/ChroW1.jpg" style="padding-top: 5px;")
 
       div.dOWEPSec
-         h2 PowerPoint
+         div.dOWEPSecEntete
+            h2 Excel
+            div.dOWEPSecEntetePlus +
+         div#dOWEPExcel.dOWEPSecCorps
+            div.dChroniques
+               div.dOWEPSecEntete
+                  span(style="font-weight: bold;") Chronique 5
+                  div.dOWEPSecEntetePlus +
+               div.dOWEPSecCorps
+                  div.dChroniquesCorps
+                     span Utiliser la fonction F4 pour d&eacute;finir rapidement la r&eacute;f&eacute;rence (absolue ou relative) &agrave; une cellule.
+                     |Presser la touche F4 une fois pour ajouter le symbole dollar devant la r&eacute;f&eacute;rence de ligne et de colonne;
+                     |une seconde fois pour placer le symbole uniquement devant la ligne, une troisi&egrave;me fois pour placer le symbole
+                     |uniquement devant la colonne et une quatri&egrave;me fois pour une r&eacute;f&eacute;rence normale, sans aucun symbole.
+            div.dChroniques
+               div.dOWEPSecEntete
+                  span(style="font-weight: bold;") Options disponibles de la barre d'&eacute;tat - Excel
+                  div.dOWEPSecEntetePlus +
+               div.dOWEPSecCorps
+                  div.dChroniquesCorps
+                     span Pour la plage s&eacute;lectionn&eacute;e : la somme, la moyenne, le nombre de cellules vides.
+                     br
+                     img(src="/images/ChroE1.jpg" style="padding-top: 5px;")
 
-         div.dChroniques
-            span Utiliser le Masque des diapositives (sous l'onglet Affichage) pour modifier l'ensemble ou une des
-            |dispositions de la pr&eacute;sentation. La modification effectu&eacute;e dans le masque s'appliquera &agrave; l'ensemble de la pr&eacute;sentation.
-            |Ajouter un logo dans le masque et ce dernier appara&icirc;tra sur toutes les diapositives de la pr&eacute;sentation.
-            |Ne pas oublier de D&eacute;sactiver le masque avant de poursuivre la cr&eacute;ation de la pr&eacute;sentation.
+      div.dOWEPSec
+         div.dOWEPSecEntete
+            h2 PowerPoint
+            div.dOWEPSecEntetePlus +
+         div#dOWEPPowerPoint.dOWEPSecCorps
+            div.dChroniques
+               div.dOWEPSecEntete
+                  span(style="font-weight: bold;") Chronique 7
+                  div.dOWEPSecEntetePlus +
+               div.dOWEPSecCorps
+                  div.dChroniquesCorps
+                     span Utiliser le Masque des diapositives (sous l'onglet Affichage) pour modifier l'ensemble ou une des
+                     |dispositions de la pr&eacute;sentation. La modification effectu&eacute;e dans le masque s'appliquera &agrave; l'ensemble de la pr&eacute;sentation.
+                     |Ajouter un logo dans le masque et ce dernier appara&icirc;tra sur toutes les diapositives de la pr&eacute;sentation.
+                     |Ne pas oublier de D&eacute;sactiver le masque avant de poursuivre la cr&eacute;ation de la pr&eacute;sentation.
 
-         div.dChroniques
-            span La langue, la v&eacute;rification linguistique, les boutons pour l'ajout rapide de Notes et Commentaires, le th&egrave;me utilis&eacute;, le num&eacute;ro de la diapositive.
-            br
-            img(src="/images/ChroPP1.jpg" style="padding-top: 5px;")
+            div.dChroniques
+               div.dOWEPSecEntete
+                  span(style="font-weight: bold;") Options disponibles de la barre d'&eacute;tat - PowerPoint
+                  div.dOWEPSecEntetePlus +
+               div.dOWEPSecCorps
+                  div.dChroniquesCorps
+                     span La langue, la v&eacute;rification linguistique, les boutons pour l'ajout rapide de Notes et Commentaires, le th&egrave;me utilis&eacute;, le num&eacute;ro de la diapositive.
+                     br
+                     img(src="/images/ChroPP1.jpg" style="padding-top: 5px;")
 
    div#dOnglets
       div
@@ -83,4 +151,133 @@ div#dOWEP
             br
             input(type="checkbox" name="App" value="PowerPoint")
             span PowerPoint
+      div.dOngletsSub
+         div
+            h3 Mots-cl&eacute;s
+            input(type="checkbox" name="App" value="Outlook")
+            span Bo&icirc;te de r&eacute;ception
+            br
+            input(type="checkbox" name="App" value="Word")
+            span Rendez-vous
 div#dFond(onclick="cacheOWEP()")
+div#dGetTooltip
+
+
+//div#dOWEP
+     div#dOWEPSub
+        div(style="margin: 5px 0 5px 5px;")
+           h2 Chroniques OWEP
+           span Les options d&eacute;crites ci-apr&egrave;s et les captures d'&eacute;cran ont &eacute;t&eacute; r&eacute;alis&eacute;es dans un environnement Windows 10 et Office 2016. Ces options peuvent diff&eacute;rer selon l'environnement.
+          div.dOWEPSec
+           div.dOWEPSecEntete
+              h2 Outlook
+              div.dOWEPSecEntetePlus +
+           div#dOWEPOutlook.dOWEPSecCorps
+              div.dChroniques
+                 div.dOWEPSecEntete
+                    span(style="font-weight: bold;") TRUCS ET ASTUCES - Outlook
+                    div.dOWEPSecEntetePlus +
+                 div.dOWEPSecCorps
+                    div.dChroniquesCorps
+                       span Transformer rapidement un courriel re&ccedil;u en Rendez-vous ou T&acirc;che en le glissant vers l'ic&ocirc;ne appropri&eacute;e.
+                       |En glissant le courriel vers l'ic&ocirc;ne Contacts, le contenu du courriel s'inscrit dans l'espace Notes.
+              div.dChroniques
+                 div.dOWEPSecEntete
+                    span(style="font-weight: bold;") Chronique 2
+                    div.dOWEPSecEntetePlus +
+                 div.dOWEPSecCorps
+                    div.dChroniquesCorps
+                       span Le nombre d'&eacute;l&eacute;ments dans un dossier; l'information sur les quotas (espace libre dans la boite), le nombre d'&eacute;l&eacute;ments non lus, etc.
+                       br
+                       img(src="/images/ChroO1.png" style="padding-top: 5px;")
+          div.dOWEPSec
+           div.dOWEPSecEntete
+              h2 Word
+              div.dOWEPSecEntetePlus +
+           div#dOWEPWord.dOWEPSecCorps
+              div.dChroniques
+                 div.dOWEPSecEntete
+                    span(style="font-weight: bold;") Chronique 3
+                    div.dOWEPSecEntetePlus +
+                 div.dOWEPSecCorps
+                    div.dChroniquesCorps
+                       span Utiliser un saut de section page suivante pour :
+                       ul
+                          li Modifier l'orientation du document &agrave; partir de l'insertion du saut de section
+                          li Ajouter ou enlever de l'information dans l'ent&ecirc;te ou le pied-de-page (logo, num&eacute;ro de page, titre du chapitre, ...)
+              div.dChroniques
+                 div.dOWEPSecEntete
+                    span(style="font-weight: bold;") Options disponibles de la barre d'&eacute;tat - Word
+                    div.dOWEPSecEntetePlus +
+                 div.dOWEPSecCorps
+                    div.dChroniquesCorps
+                       span Le nombre de mots dans le document, le nombre de mots s&eacute;lectionn&eacute;s, le nombre de pages, le nombre de page par section, la langue, la v&eacute;rification linguistique, le mode Refrappe, etc.
+                       br
+                       img(src="/images/ChroW1.jpg" style="padding-top: 5px;")
+          div.dOWEPSec
+           div.dOWEPSecEntete
+              h2 Excel
+              div.dOWEPSecEntetePlus +
+           div#dOWEPExcel.dOWEPSecCorps
+              div.dChroniques
+                 div.dOWEPSecEntete
+                    span(style="font-weight: bold;") Chronique 5
+                    div.dOWEPSecEntetePlus +
+                 div.dOWEPSecCorps
+                    div.dChroniquesCorps
+                       span Utiliser la fonction F4 pour d&eacute;finir rapidement la r&eacute;f&eacute;rence (absolue ou relative) &agrave; une cellule.
+                       |Presser la touche F4 une fois pour ajouter le symbole dollar devant la r&eacute;f&eacute;rence de ligne et de colonne;
+                       |une seconde fois pour placer le symbole uniquement devant la ligne, une troisi&egrave;me fois pour placer le symbole
+                       |uniquement devant la colonne et une quatri&egrave;me fois pour une r&eacute;f&eacute;rence normale, sans aucun symbole.
+              div.dChroniques
+                 div.dOWEPSecEntete
+                    span(style="font-weight: bold;") Options disponibles de la barre d'&eacute;tat - Excel
+                    div.dOWEPSecEntetePlus +
+                 div.dOWEPSecCorps
+                    div.dChroniquesCorps
+                       span Pour la plage s&eacute;lectionn&eacute;e : la somme, la moyenne, le nombre de cellules vides.
+                       br
+                       img(src="/images/ChroE1.jpg" style="padding-top: 5px;")
+          div.dOWEPSec
+           div.dOWEPSecEntete
+              h2 PowerPoint
+              div.dOWEPSecEntetePlus +
+           div#dOWEPPowerPoint.dOWEPSecCorps
+              div.dChroniques
+                 div.dOWEPSecEntete
+                    span(style="font-weight: bold;") Chronique 7
+                    div.dOWEPSecEntetePlus +
+                 div.dOWEPSecCorps
+                    div.dChroniquesCorps
+                       span Utiliser le Masque des diapositives (sous l'onglet Affichage) pour modifier l'ensemble ou une des
+                       |dispositions de la pr&eacute;sentation. La modification effectu&eacute;e dans le masque s'appliquera &agrave; l'ensemble de la pr&eacute;sentation.
+                       |Ajouter un logo dans le masque et ce dernier appara&icirc;tra sur toutes les diapositives de la pr&eacute;sentation.
+                       |Ne pas oublier de D&eacute;sactiver le masque avant de poursuivre la cr&eacute;ation de la pr&eacute;sentation.
+                div.dChroniques
+                 div.dOWEPSecEntete
+                    span(style="font-weight: bold;") Options disponibles de la barre d'&eacute;tat - PowerPoint
+                    div.dOWEPSecEntetePlus +
+                 div.dOWEPSecCorps
+                    div.dChroniquesCorps
+                       span La langue, la v&eacute;rification linguistique, les boutons pour l'ajout rapide de Notes et Commentaires, le th&egrave;me utilis&eacute;, le num&eacute;ro de la diapositive.
+                       br
+                       img(src="/images/ChroPP1.jpg" style="padding-top: 5px;")
+       div#dOnglets
+        div
+           input(type="text" name="recherche" placeholder="Recherche" style="margin: 5px;")
+           h3 Filtres
+        div.dOngletsSub
+           div
+              h3 Application
+              input(type="checkbox" name="App" value="Outlook")
+              span Outlook
+              br
+              input(type="checkbox" name="App" value="Word")
+              span Word
+              br
+              input(type="checkbox" name="App" value="Excel")
+              span Excel
+              br
+              input(type="checkbox" name="App" value="PowerPoint")
+              span PowerPoint
+      div#dFond(onclick="cacheOWEP()")

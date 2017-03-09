@@ -229,6 +229,27 @@ h1,h2{
   z-index: 1;
 }
 
+#divContactLogo{
+  text-align: left;
+  padding: 10px;
+}
+
+.spanContactLogo{
+  font: 25px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: #008ce0;
+  text-shadow: 2px 2px 8px #000000;
+  font-weight: bold;
+  display: block;
+}
+
+.spanPositionLogo{
+  font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  display: block;
+  /*color: #008ce0;*/
+  /*text-shadow: 2px 2px 8px #008ce0;*/
+}
+
 #iLogo{
   width: 550px;
 }

@@ -16,7 +16,7 @@ block content
         span.fade Services offerts
         span#spanServices.sNormal &#x25C7;
       div.dMenuSelect(onclick="allerSection('sTarifs')" onmouseover="mOver(this)" onmouseout="mOut(this)")
-        span.fade Forfaits et &agrave; la carte
+        span.fade Tarifs, combos et support bureautique
         span#spanTarifs.sNormal &#x25C7;
       div.dMenuSelect(onclick="allerSection('sTrucs')" onmouseover="mOver(this)" onmouseout="mOut(this)")
         span.fade Chroniques OWEP
@@ -40,7 +40,7 @@ block content
         br
         span.spanPositionLogo Contactez-nous :
         span.spanPositionLogo (438) 388-5592
-        span.spanPositionLogo eureka.solutionsti@gmail.com
+        a.aLogo(href="mailto:eureka.solutionsti@gmail.com" target="blank") eureka.solutionsti@gmail.com
 
     //img#iFond(src="/images/takxap853ry-alejandro-escamilla.jpg")
   section#sResume(class="sectionClass")
@@ -65,187 +65,154 @@ block content
           li Service de support bureautique et montage de documents types
   section#sTarifs(class="sectionClass")
     div#divTarif
-      div#forfaitsEntete.divEntete
-        h2.h2TarifClick Forfaits
-      div#forfaits
-        div(class="divPlans")
-          table.tableTarif
-            tr.trTarif
-              td.tdTarifH
-                span
-                  h3 Plan 1
-            tr.trTarif
-              td.tdTarif
-                span 1 heure de formation sur place
-                br
-                span &
-                br
-                span 1 heure de support t&eacute;l&eacute;phonique
-                br
-                span &
-                br
-                span 1 heure de mise en forme de documents mod&egrave;les ou de montage de documents types
-            tr.trTarif
-              td.tdTarifP
-                span
-                  span.spanP $ 160,00
-        div(class="divPlans")
-          table.tableTarif
-            tr.trTarif
-              td.tdTarifH
-                span
-                  h3 Plan 2
-            tr.trTarif
-              td.tdTarif
-                span 3 heures de formation
-                br
-                span &
-                br
-                span Support post-formation de 15 minutes
-            tr.trTarif
-              td.tdTarifP
-                span
-                  span.spanP $ 200,00
-        div(class="divPlans")
-          table.tableTarif
-            tr.trTarif
-              td.tdTarifH
-                span
-                  h3 Plan 3
-            tr.trTarif
-              td.tdTarif
-                span 3 heures de support t&eacute;l&eacute;phonique
-                br
-                span &
-                br
-                span 1 heure de mise en forme de documents mod&egrave;les ou de montage de documents types
-            tr.trTarif
-              td.tdTarifP
-                span
-                  span.spanP $ 250,00
-        div(class="divPlans")
-          table.tableTarif
-            tr.trTarif
-              td.tdTarifH
-                span
-                  h3 Plan 4
-            tr.trTarif
-              td.tdTarif
-                span 2 heures de formation sur place
-                br
-                span &
-                br
-                span 3 heures de support t&eacute;l&eacute;phonique
-            tr.trTarif
-              td.tdTarifP
-                span
-                  span.spanP $ 350,00
-      div#fraisEntete.divEntete
-        h2.h2TarifClick Frais &agrave; la carte
-        button.bPlus(onclick="affichePlan(this, 'frais')") +
-      div#frais.divHide
-        div(class="divPlans")
-          table.tableTarif
-            tr.trTarif
-              td.tdTarifH
-                span
-                  h3 &Agrave; la carte 1
-            tr.trTarif
-              td.tdTarif
-                span Formation
-                br
-                span Maximum de 6 participants
-                br
-                span - Charge additionnelle par utilisateur exc&eacute;dentaire
-            tr.trTarif
-              td.tdTarifP
-                  span.spanP $ 80,00
-                  span.spanHS de l'heure
-        div(class="divPlans")
-          table.tableTarif
-            tr.trTarif
-              td.tdTarifH
-                span
-                  h3 &Agrave; la carte 2
-            tr.trTarif
-              td.tdTarif
-                span Mise en page de documents
-                ul(style="text-align: left;")
-                  li Mise en forme de formulaires pour faciliter les t&acirc;ches quotidiennes
-                  li Montage de documents types
-            tr.trTarif
-              td.tdTarifP
-                span.spanP $ 50,00
-                span.spanHS de l'heure
-        div(class="divPlans")
-          table.tableTarif
-            tr.trTarif
-              td.tdTarifH
-                span
-                  h3 &Agrave; la carte 3
-            tr.trTarif
-              td.tdTarif
-                span Service de support bureautique
-                br
-                span - Charge minimale de 15 minutes par appel
-            tr.trTarif
-              td.tdTarifP
-                span.spanP $ 20,00
-                span.spanHS chaque 15 minutes
-        div(class="divPlans")
-          table.tableTarif
-            tr.trTarif
-              td.tdTarifH
-                span
-                  h3 &Agrave; la carte 4
-            tr.trTarif
-              td.tdTarif
-                span Consultation et gestion de projet
-            tr.trTarif
-              td.tdTarifP
-                span.spanP $ 100,00
-                span.spanHS de l'heure
-        div(class="divPlans")
-          table.tableTarif
-            tr.trTarif
-              td.tdTarifH
-                span
-                  h3 &Agrave; la carte 5
-            tr.trTarif
-              td.tdTarif
-                span D&eacute;veloppement de capsules
-                br
-                span e-learning
-            tr.trTarif
-              td.tdTarifP
-                span.spanP $ 80,00
-                span.spanHS de l'heure
-        div(class="divPlans")
-          table.tableTarif
-            tr.trTarif
-              td.tdTarifH
-                span
-                  h3 &Agrave; la carte 6
-            tr.trTarif
-              td.tdTarif
-                span D&eacute;veloppement de petites applications
-            tr.trTarif
-              td.tdTarifP
-                span.spanP $ 80,00
-                span.spanHS de l'heure
-        div(class="divPlans")
-          table.tableTarif
-            tr.trTarif
-              td.tdTarifH
-                span
-                  h3 &Agrave; la carte 7
-            tr.trTarif
-              td.tdTarif
-                span R&eacute;alisation de pages web
-            tr.trTarif
-              td.tdTarifP
-                span.spanP $ 50,00
-                span.spanHS de l'heure
+      div.divSousTarif
+        div#forfaitsEntete.divEntete
+          h2.h2TarifClick Tarifs
+        div#forfaits
+          a.aForfaits(href="mailto:eureka.solutionsti@gmail.com?Subject=Mise en forme et montages de documents" target="blank")
+            div(class="divPlans")
+              table.tableTarif
+                tr.trTarif
+                  td.tdTarifH
+                    h3 Mise en forme et montages de documents
+                tr.trTarif
+                  td.tdTarif
+                    span 1 heure de mise en forme de documents mod&egrave;les ou de montage de documents types
+                    br
+                    label.labelLienGlossaire(data-tooltip="<b>Tarif &agrave; l'heure</b><br>" +
+                    "Le tarif est d&eacute;termin&eacute; selon un taux horaire de $50.00 / heure. Il est possible que nous demandions &agrave; voir votre document afin d'en&nbsp;" +
+                    "&eacute;valuer la longueur et la complexit&eacute;. Au besoin, des ententes forfaitaires pourront &ecirc;tre conclues. L'&eacute;valuation du travail est gratuite." +
+                    "<br><br><b>Tarif de soir&eacute;e et de fin de semaine</b><br>" +
+                    "Il nous est possible de r&eacute;pondre &agrave; des demandes urgentes de soir ou de fin de semaine sur r&eacute;servation uniquement. Un taux horaire&nbsp;" +
+                    "de $75.00 / heure sera alors appliqu&eacute;. Une demande de soir ou de fin de semaine peut correspondre aux demandes suivantes :" +
+                    "<ul>" +
+                    "<li>un document livr&eacute; en soir&eacute;e exig&eacute; pour le lendemain matin</li>" +
+                    "<li>un document livr&eacute; le vendredi en fin d'apr&egrave;s-midi pour le lundi matin.</li>" +
+                    "</ul>" +
+                    "<br><b>Tarif minimal</b><br>" +
+                    "Un tarif minimal de 20,00 $ sera charg&eacute; pour les tr&egrave;s courts documents (moins d'une page)" +
+                    "<br>D&eacute;finition d'une page - Une page &eacute;quivaut &agrave; une page de traitement de texte, police de caract&egrave;res 12 points" +
+                    "(Times New Roman et interligne simple)") Conditions
+                tr.trTarif
+                  td.tdTarifP
+                    span
+                      span.spanP $ 50
+                      span.spanHS de l'heure
+          a.aForfaits(href="mailto:eureka.solutionsti@gmail.com?Subject=Formation" target="blank")
+            div(class="divPlans")
+              table.tableTarif
+                tr.trTarif
+                  td.tdTarifH
+                    h3 Formation
+                tr.trTarif
+                  td.tdTarif
+                    span 3 heures de formation en entreprise (1/2 journ&eacute;e)
+                    br
+                    label.labelLienGlossaire(data-tooltip="Si le d&eacute;placement s'effectue dans un rayon de 30 km, aucun frais de d&eacute;placement ne sera imput&eacute;. Les frais de stationnement seront cependant factur&eacute;s. Si le d&eacute;placement s'effectue de plus de 30 km, des frais de 0,54$ / km exc&eacute;dentaires seront imput&eacute;s &agrave; la facture. Maximum de 6 participants par s&eacute;ance.") Conditions
+                tr.trTarif
+                  td.tdTarifP
+                    span
+                      span.spanP $ 350,00
+      div.divSousTarif
+        div#forfaitsEntete.divEntete
+          h2.h2TarifClick Combos
+        div#forfaits
+          a.aForfaits(href="mailto:eureka.solutionsti@gmail.com?Subject=Combo%201" target="blank")
+            div(class="divPlans")
+              table.tableTarif
+                tr.trTarif
+                  td.tdTarifH
+                    h3 Combo 1
+                tr.trTarif
+                  td.tdTarif
+                    ul
+                      li
+                        span 3 heures de formation
+                        br
+                        span (1/2 journ&eacute;e)
+                      li 1 heure de support bureautique
+                      li 1 heure de mise en forme de documents mod&egrave;les ou de montage de documents types
+                tr.trTarif
+                  td.tdTarifP
+                    span
+                      span.spanP $ 400,00
+          a.aForfaits(href="mailto:eureka.solutionsti@gmail.com?Subject=Combo%202" target="blank")
+            div(class="divPlans")
+              table.tableTarif
+                tr.trTarif
+                  td.tdTarifH
+                    h3 Combo 2
+                tr.trTarif
+                  td.tdTarif
+                    ul
+                      li
+                        span 6 heures de formation
+                        br
+                        span (1 journ&eacute;e)
+                      li 3 heure de support bureautique
+                      li 3 heure de mise en forme de documents mod&egrave;les ou de montage de documents types
+                tr.trTarif
+                  td.tdTarifP
+                    span
+                      span.spanP $ 900,00
+      div.divSousTarif
+        div#forfaitsEntete.divEntete
+          h2.h2TarifClick Support bureautique
+        div#forfaits
+          a.aForfaits(href="mailto:eureka.solutionsti@gmail.com?Subject=Support bureautique forfait 1" target="blank")
+            div(class="divPlans")
+              table.tableTarif
+                tr.trTarif
+                  td.tdTarifH
+                    h3 Forfait 1
+                tr.trTarif
+                  td.tdTarif
+                    span 200 minutes
+                    br
+                    span Valide pour 12 mois
+                    br
+                    span Charge minimale de 15 minutes par appel
+                tr.trTarif
+                  td.tdTarifP
+                    span
+                      span.spanP $ 375,00
+                      span.spanHS par ann&eacute;e
+          a.aForfaits(href="mailto:eureka.solutionsti@gmail.com?Subject=Support bureautique forfait 2" target="blank")
+            div(class="divPlans")
+              table.tableTarif
+                tr.trTarif
+                  td.tdTarifH
+                    h3 Forfait 2
+                tr.trTarif
+                  td.tdTarif
+                    span 300 minutes
+                    br
+                    span Valide pour 12 mois
+                    br
+                    span Charge minimale de 15 minutes par appel
+                tr.trTarif
+                  td.tdTarifP
+                    span
+                      span.spanP $ 575,00
+                      span.spanHS par ann&eacute;e
+          a.aForfaits(href="mailto:eureka.solutionsti@gmail.com?Subject=Support bureautique forfait 3" target="blank")
+            div(class="divPlans")
+              table.tableTarif
+                tr.trTarif
+                  td.tdTarifH
+                    h3 Forfait 3
+                tr.trTarif
+                  td.tdTarif
+                    span 600 minutes
+                    br
+                    span Valide pour 12 mois
+                    br
+                    span Charge minimale de 15 minutes par appel
+                tr.trTarif
+                  td.tdTarifP
+                    span
+                      span.spanP $ 1050,00
+                      span.spanHS par ann&eacute;e
   section#sTrucs(class="sectionClass")
     div(class="divDesc")
       h2.h2TarifClick Chroniques OWEP

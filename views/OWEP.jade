@@ -17,6 +17,7 @@ div#dOWEP
             h2 Outlook
             div.dOWEPSecEntetePlus +
          div#dOWEPOutlook.dOWEPSecCorps
+            //***************************
             div.dOWEPSecEntete
                span.sSousSujet Bo&icirc;te de r&eacute;ception
                div.dOWEPSecEntetePlus +
@@ -31,11 +32,40 @@ div#dOWEP
                         label.labelLienGlossaire(data-tooltip="La barre d'&eacute;tat est la barre situ&eacute;e au bas de l'&eacute;cran juste au dessus de la barre des t&acirc;ches de Windows. Par d&eacute;faut, uniquement quelques informations se trouvent sur la barre d'&eacute;tat au moment de l'installation standard, autre que le Zoom et le Curseur de Zoom. Pour ajouter ou enlever des &eacute;l&eacute;ments de la barre d'&eacute;tat, cliquer-droit sur la barre d'&eacute;tat pour afficher les &eacute;l&eacute;ments disponibles.") barre d'&eacute;tat
                         span ; de plus, on y retrouve les informations suivantes : les quotas (espace libre dans la boite), le nombre d'&eacute;l&eacute;ments non lus, le curseur de zoom, le zoom, le nombre de rappels, etc.
                         |Pour afficher plus d'informations, cliquer droit sur la barre d'&eacute;tat et s&eacute;lectionner les informations &agrave; afficher.
+            //***************************
+            div.dOWEPSecEntete
+               span.sSousSujet Capture d'&eacute;cran
+               div.dOWEPSecEntetePlus +
+            div.dOWEPSecCorps
+               div.dChroniques
+                  div.dOWEPSecEntete
+                     span.sTitre Ins&eacute;rer une capture d'&eacute;cran
+                     div.dOWEPSecEntetePlus +
+                  div.dOWEPSecCorps
+                     div.dChroniquesCorps
+                        span Utiliser la fonction&nbsp;
+                        label.labelLienGlossaire(data-tooltip="") capture
+                        span &nbsp;du groupe&nbsp;
+                        label.labelLienGlossaire(data-tooltip="") illustrations
+                        span &nbsp;de l'onglet&nbsp;
+                        label.labelLienGlossaire(data-tooltip="") insertion
+                        span &nbsp;. Cette fonction ins&egrave;re automatiquement l'&eacute;cran s&eacute;lectionn&eacute; parmi ceux disponibles dans la galerie&nbsp;
+                        label.labelLienGlossaire(data-tooltip="") fen&ecirc;tres disponibles
+                        span &nbsp;.
+                        ul
+                           li Pour ins&eacute;rer une capture d'&eacute;cran d'une fen&ecirc;tre enti&egrave;re dans votre document, cliquez sur l'image miniature de cette fen&ecirc;tre.
+                           li
+                              span Pour ajouter une partie de la premi&egrave;re fen&ecirc;tre qui appara&icirc;t dans la galerie &nbsp;
+                              label.labelLienGlossaire(data-tooltip="") fen&ecirc;tres disponibles
+                              span &nbsp;, cliquez sur&nbsp;
+                              label.labelLienGlossaire(data-tooltip="") capture d'&eacute;cran 
+                              span &nbsp;au bas de la galerie. Lorsque l'&eacute;cran devient blanc et que le pointeur se transforme en croix,
+                              |maintenez le bouton gauche de la souris enfonc&eacute; et faites-la glisser pour s&eacute;lectionner la partie de l'&eacute;cran que vous voulez capturer.
+            //*****************************
             div.dOWEPSecEntete
                span.sSousSujet Rendez-vous
                div.dOWEPSecEntetePlus +
             div.dOWEPSecCorps
-
                div.dChroniques
                   div.dOWEPSecEntete
                      span.sTitre Transformer un courriel re&ccedil;u en rendez-vous
@@ -135,7 +165,7 @@ div#dOWEP
 
    div#dOnglets
       div
-         input(type="text" name="recherche" placeholder="Recherche" style="margin: 5px;")
+         input#iRecherche(type="text" name="recherche" placeholder="Recherche" style="margin: 5px;")
          h3 Filtres
       div.dOngletsSub
          div

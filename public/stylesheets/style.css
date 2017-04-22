@@ -54,7 +54,7 @@ body {
   border-color: #008ce0;
   z-index:101;
   background: white;
-  font-size: 80%;
+  font-size: 85%;
   display: none;
 }
 
@@ -243,10 +243,18 @@ h1,h2{
 }
 
 .spanPositionLogo{
+   font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
+   font-weight: bold;
+   display: block;
+   /*color: #008ce0;*/
+   /*text-shadow: 2px 2px 8px #008ce0;*/
+ }
+
+.aLogo{
   font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
   font-weight: bold;
   display: block;
-  /*color: #008ce0;*/
+  color: #404040;
   /*text-shadow: 2px 2px 8px #008ce0;*/
 }
 
@@ -283,6 +291,21 @@ h1,h2{
   width: 60%;
   margin: 10px auto;
   text-align: center;
+}
+
+.divSousTarif{
+  display: inline-block;
+  border: 2px solid rgb(211, 215, 217);
+  padding-top: 5px;
+  margin: 0 10px 10px 0;
+}
+
+.divSousTarif:last-child{
+  margin: 0;
+}
+
+.aForfaits{
+  color: inherit;
 }
 
 .divPlans{
@@ -327,6 +350,15 @@ h1,h2{
 .tdTarif{
   height: 200px;
 
+}
+
+.tdTarif ul{
+  text-align: left;
+  padding-left: 20px;
+}
+
+.tdTarif li{
+  margin-bottom: 10px;
 }
 
 .tdTarifP{
@@ -501,17 +533,17 @@ button:focus {outline:0;}
 }
 
 .fade{
-  opacity: 0;
+  /*opacity: 0;
   width: 0;
   transition: opacity .5s ease-in-out;
   -moz-transition: opacity .5s ease-in-out;
-  -webkit-transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;*/
 }
-
+/*
 #dMenu:hover .fade{
   opacity: 1;
 }
 
 #dMenu:hover #dMenuUnder{
   width: 350px;
-}
+}*/

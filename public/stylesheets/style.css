@@ -167,6 +167,35 @@ body {
   margin-bottom: 0;
 }
 
+.divAPropos{
+  padding: 20px 0;
+
+}
+
+.divAProposPlus{
+  text-align: left;
+  width: 620px;
+  vertical-align: top;
+  padding-top: 20px;
+  margin: auto;
+}
+
+.divAProposIndividu{
+  text-align: left;
+  display: inline-block;
+  width: 300px;
+  margin-right: 20px;
+  vertical-align: top;
+}
+
+.divAProposIndividu:last-child{
+  margin-right: 0;
+}
+
+.divAProposIndividu h3{
+  color: #0070c0;
+}
+
 #dFond{
   display: none;
   position: fixed;
@@ -185,6 +214,12 @@ body {
 .divFiltre{
   background: rgba(0, 0, 0, 0.6);
 }
+
+.divFiltre2{
+  /*height: 100%;
+  background: rgba(255, 255, 255, 0.2);*/
+}
+
 
 ul{
   margin: 0;
@@ -224,7 +259,7 @@ h1,h2{
 #divlogo{
   position: absolute;
   top: 20px;
-  left: 250px;
+  left: 100px;
   margin: auto;
   z-index: 1;
 }
@@ -506,7 +541,7 @@ button:focus {outline:0;}
 #dMenuUnder{
   position: fixed;
   right: 0;
-  width: 0;
+  width: 500px;
   height: 100%;
   z-index: -1;
   background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75));
@@ -517,6 +552,7 @@ button:focus {outline:0;}
   right: 50px;
   top: 33%;
   color: #d49a00;
+  /*text-shadow: 2px 2px 8px #000000;*/
   font: bold 16px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 

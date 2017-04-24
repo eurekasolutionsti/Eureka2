@@ -184,15 +184,14 @@ body {
   text-align: left;
   display: inline-block;
   width: 300px;
-  margin-right: 20px;
   vertical-align: top;
 }
 
-.divAProposIndividu:last-child{
-  margin-right: 0;
+.divFrance{
+  margin-right: 20px;
 }
 
-.divAProposIndividu h3{
+.divAProposIndividu h3,.divAProposPlus h3{
   color: #0070c0;
 }
 
@@ -329,10 +328,18 @@ h1,h2{
 }
 
 .divSousTarif{
-  display: inline-block;
   border: 2px solid rgb(211, 215, 217);
   padding-top: 5px;
-  margin: 0 10px 10px 0;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.st1, .st2{
+
+}
+
+.st1{
+  margin-right: 10px;
 }
 
 .divSousTarif:last-child{
